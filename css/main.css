@@ -457,6 +457,19 @@ body {
     .container-2 .content-container-2 p {
       width: 80%;
       margin: auto; }
+  .container-2 .content-container-3 {
+    width: 100%;
+    height: 2000px;
+    margin-bottom: 150px;
+    display: grid;
+    justify-content: center; }
+    .container-2 .content-container-3 img {
+      margin: auto;
+      width: 80%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .container-2 .content-container-3 p {
+      width: 80%;
+      margin: auto; }
   .container-2 button {
     margin: auto;
     border: none;

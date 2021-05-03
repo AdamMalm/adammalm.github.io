@@ -7,10 +7,75 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="main.js"></script>
 </head>
 <body>
 
-</body>
-</html>
+    <header id = "header-main-2">
+      
+        <div class = "nav">
+          <div id = "logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="53.452" height="58.631" viewBox="0 0 53.452 58.631">
+              <g id="Group_2" data-name="Group 2" transform="translate(-2230.768 -1362.015)">
+                <path id="Path_7" data-name="Path 7" d="M2231.768,1376.453v-10.29a143.335,143.335,0,0,1,25.589-2.656,148.41,148.41,0,0,1,25.863,2.656v10.29" transform="translate(0 -0.491)" fill="none" stroke="#f4f4f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                <text id="A_H" data-name="A H" transform="translate(2257 1398.7)" fill="#f4f4f4" font-size="22" font-family="Poppins-Regular, Poppins"><tspan x="-17.952" y="0">A H</tspan></text>
+                <path id="Path_9" data-name="Path 9" d="M0,12.946V2.656A143.34,143.34,0,0,1,25.589,0,148.419,148.419,0,0,1,51.452,2.656v10.29" transform="translate(2283.22 1419.647) rotate(180)" fill="none" stroke="#f4f4f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </g>
+            </svg>      
+          </div>
+          <ul>
+
+            <li style = "z-index: 11;"><a href = "index.html#project-title" class = "nav-link">projects</a></li>
+            <li style = "z-index: 11;"><a href = "index.html#about-title" class = "nav-link">about me</a></li>
+            <li style = "z-index: 11;"><a href = "index.html#contact-title" class = "nav-link">contact</a></li>
+          </ul>
+        </div>
+      
+
+      
+    </header>
+
+    <section>
+        <div class = "container-2">
+            <h1>happycat<span class = "blue">.</span></h1>
+            <hr>
+
+            <h2 class = "sub-title">Internet of Things Project<span class = "blue">.</span></h2>
+            <hr class = "sub-line">
+
+            <div class = "content-container-3">
+                <img src = "image/Mask Group 10@2x.png">
+
+                <p> 
+                    For the course "Design och Tjänsteutveckling för Internet of Things" I and three 
+                    other group members were tasked with building and implementing an Internet of
+                    Things system that solves a problem. One of the requirements for the project 
+                    was that the system was focused on a "Smart Home" solution. My group and I decided 
+                    to create a cat monitoring system that tracks the amount of food and water that
+                    is left along with when the litterbox needed to be emptied.
+                </p>
+
+                <img src = "image/Mask Group 11@2x.png">
+
+                <p>
+                    The above most picture are of the scales me and one other group member created 
+                    in order to monitor the amount of food and water left, we managed to get them 
+                    precise to as low as half a gram!. We used loading cells 
+                    coupled with HX711-chips to amplify their signal connected to ESP32s in order 
+                    to reach a desired effectiveness. We implemented the software with the help of an 
+                    open source C-Library for the HX711-chip in the Arduino IDE. We then transmitted
+                    information from the scales to our user interface over an MQTT server.
+                </p>
+
+                <img src = "image/Mask Group 12@2x.png">
+
+                <p>
+                    Whilst one half of the group focused on creating the scales the other half of the 
+                    group created a motion detection system with the help of a PIR-sensor in order to
+                    know when and how much the cat used the litterbox. Along with this they also created 
+                    a user interface that displayed all the information transmitted to it.
+                </p>
+
+                <button type = "button"><a href = "index.html">home</a></button>
+            </div>
+        </div>
+    </section>

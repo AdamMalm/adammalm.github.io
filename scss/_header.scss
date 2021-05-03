@@ -16,7 +16,7 @@ $text-color: #424242;
         justify-content: space-between;
         padding: 0 10%;
         padding-top: 1%;
-    
+
         li {
             padding: 15px;
             display: inline-block;
@@ -96,18 +96,26 @@ $text-color: #424242;
                 box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
                 border-radius: 44px;
                 background-color: $light-color;
-                font-family: $font-stack;
                 line-height: 1.6;
-                color: $text-color;
-                font-size: 22px;
                 z-index: 2;
+
+                a {
+                    text-decoration: none;
+                    font-family: $font-stack;
+                    color: $text-color;
+                    font-size: 22px;
+                }
 
                 &:hover {
                     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
                     cursor: pointer;
                     height: 64px;
                     width: 204px;
-                    font-size: 23px;
+                    
+                    a {
+                        font-size: 23px;
+                    }
+
                     transition: all 0.1s;
                 }
             }

@@ -10,7 +10,15 @@
         }
     }
 
+    #header-main {
+        .nav {
+        padding: 0 5%;
 
+            #logo {
+                
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -21,6 +29,16 @@
         
             img {
                 filter: blur(0p);
+            }
+        }
+    }
+
+    #header-main {
+        .nav {
+        padding: 0 5%;
+
+            #logo {
+                
             }
         }
     }

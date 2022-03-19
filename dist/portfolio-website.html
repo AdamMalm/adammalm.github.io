@@ -13,7 +13,7 @@
     <header id = "header-main-2">
       
         <div class = "nav">
-          <div id = "logo">
+          <div id = "logo" onclick='redirectFunction("index.html")'>
             <svg xmlns="http://www.w3.org/2000/svg" width="53.452" height="58.631" viewBox="0 0 53.452 58.631">
               <g id="Group_2" data-name="Group 2" transform="translate(-2230.768 -1362.015)">
                 <path id="Path_7" data-name="Path 7" d="M2231.768,1376.453v-10.29a143.335,143.335,0,0,1,25.589-2.656,148.41,148.41,0,0,1,25.863,2.656v10.29" transform="translate(0 -0.491)" fill="none" stroke="#f4f4f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -61,11 +61,14 @@
                     to, among other things the hamburger menu.
                 </p>
 
-                <button type = "button"><a href = "index.html">home</a></button>
+                <button type = "button" onclick='redirectFunction("index.html")'><p>home</p></button>
             </div>
         </div>
+        <script>
+          function redirectFunction(url) {
+              window.location.href = url;
+          }
+        </script>
     </section>
-
-
 </body>
 </html>

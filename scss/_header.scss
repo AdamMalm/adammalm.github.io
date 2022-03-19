@@ -17,12 +17,21 @@ $text-color: #424242;
         padding: 0 10%;
         padding-top: 1%;
 
+        #logo {
+            margin: 10px;
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         li {
             padding: 15px;
             display: inline-block;
             position: relative;
             a {
-                font-size: 1.15rem;
+                font-size: 1.4rem;
                 text-decoration: none;
                 display: inline-block;
                 color: $light-color;
@@ -38,12 +47,21 @@ $text-color: #424242;
         padding: 0 10%;
         padding-top: 1%;
 
+        #logo {
+            margin: 10px;
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         li {
             padding: 15px;
             display: inline-block;
             position: relative;
             a {
-                font-size: 1.15rem;
+                font-size: 1.4rem;
                 text-decoration: none;
                 display: inline-block;
                 color: $light-color;
@@ -120,7 +138,7 @@ $text-color: #424242;
                 line-height: 1.6;
                 z-index: 2;
 
-                a {
+                p {
                     text-decoration: none;
                     font-family: $font-stack;
                     color: $text-color;
@@ -157,12 +175,21 @@ $text-color: #424242;
         padding: 0 10%;
         padding-top: 1%;
 
+        #logo {
+            margin: 10px;
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         li {
             padding: 15px;
             display: inline-block;
             position: relative;
             a {
-                font-size: 1.15rem;
+                font-size: 1.4rem;
                 text-decoration: none;
                 display: inline-block;
                 color: $light-color;

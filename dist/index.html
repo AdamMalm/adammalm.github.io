@@ -39,7 +39,7 @@
   </ul>
 
   <div class = "nav">
-    <div id = "logo">
+    <div id = "logo" onclick='redirectFunction("index.html")'>
       <svg xmlns="http://www.w3.org/2000/svg" width="53.452" height="58.631" viewBox="0 0 53.452 58.631">
         <g id="Group_2" data-name="Group 2" transform="translate(-2230.768 -1362.015)">
           <path id="Path_7" data-name="Path 7" d="M2231.768,1376.453v-10.29a143.335,143.335,0,0,1,25.589-2.656,148.41,148.41,0,0,1,25.863,2.656v10.29" transform="translate(0 -0.491)" fill="none" stroke="#f4f4f4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
@@ -60,11 +60,11 @@
       <p>Adam Hörnemalm</p>
     </div>
     <div id = "name-text">
-      <p>Third year Interaction Technology and Design student at Umeå University</p>
+      <p>Fourth year Interaction Technology and Design student at Umeå University</p>
     </div>
     <div id = button-group>
-      <button type = "button"><a href = "#project-title">see my work</a></button>
-      <button type = "button"><a href = "#contact-title">contact me</a></button>
+      <button type = "button" onclick='redirectFunction("#project-title")'><p>see my work</p></button>
+      <button type = "button" onclick='redirectFunction("#contact-title")'><p>contact me</p></button>
     </div>
   </div>
 
@@ -77,40 +77,45 @@
 
     <h2 class = "sub-title">Web design & Development<span class = "blue">.</span></h2>
     <hr class = "sub-line">
+    
     <div class = "content-container">
-      <div class = "work-container">
-        <img src = "image/work-portfolio.png" width="100%" height="240px">
+      <div class = "work-container" onclick='redirectFunction("portfolio-website.html")'>
+        <img src = "image/work-portfolio.png">
         <div class = "work-content">
           <h2>portfolio website<span class = "blue">.</span></h2>
-          <h3>Web Development | Web Design</h3>
-          <a href = "portfolio-website.html">Read more</a>
+          <h3>HTML & CSS | UI Design</h3>
         </div>
       </div>
-      <div class = "work-container">
-        <!--
-          <img src = "image/Mask Group 3.png" width="100%" height="240px">
-          <div class = "work-content">
-            <h2>food ordering app<span class = "blue">.</span></h2>
-            <h3>UX/UI Design | User Testing</h3>
-            <a href = "food-ordering-app.html">Read more</a>
-          </div>
-        -->
+
+      <div class = "work-container" onclick='redirectFunction("food-ordering-app.html")'>
+        <img src = "image/foodordering.PNG" style="object-fit:cover; max-height: 240px object-position: center top;">
+        <div class = "work-content">
+          <h2>food ordering app<span class = "blue">.</span></h2>
+          <h3>React | UI Design | User Testing</h3>
+        </div>
       </div>
+
+      
+    </div>
+    <div class = "content-container" >
+      <div class = "work-container" onclick='redirectFunction("streamer-checker.html")' >
+        <img src = "image/streamerchecker.png" style="object-fit:cover; max-height: 240px; object-position: center top;">
+        <div class = "work-content">
+          <h2>streamer checker<span class = "blue">.</span></h2>
+          <h3>React | Firebase | Twitter API</h3>
+        </div>
+      </div> 
     </div>
 
     <h2 class = "sub-title">Other projects<span class = "blue">.</span></h2>
     <hr class = "sub-line">
-    <div class = "content-container">
-      <div class = "work-container">
+    <div class = "content-container" >
+      <div class = "work-container" onclick='redirectFunction("happycat.html")'>
         <img src = "image/Mask Group 6.png" width="100%" height="240px">
         <div class = "work-content">
           <h2>happycat<span class = "blue">.</span></h2>
           <h3>Internet of Things Project</h3>
-          <a href = "happycat.html">Read more</a>
         </div>
-      </div>
-      <div class = "work-container">
-        
       </div>
     </div>
   </div>
@@ -191,8 +196,8 @@
     <div class = "content-container">
       <div class = "about-container">
         <p id = "about-text1">
-          My name is Adam Hörnemalm, I'm a 21 year old Engineering student at Umeå University 
-          currently enrolled in my third year studying towards a degree in Interaction Technology 
+          Hi! My name is Adam Hörnemalm, and I'm a 22 year old Engineering student currently 
+          enrolled in my fourth year at Umeå University, towards a degree in Interaction Technology 
           and Design.
 
           <br>
@@ -205,8 +210,8 @@
         </p>
 
         <p id = "about-text2">
-          Along with my programming knowledge I'm also experienced in designing UX/UI interfaces, user 
-          testing and project management.
+          Along with my programming knowledge I'm also experienced in designing user interfaces, conducting 
+          user testing and project management.
         </p>
 
         <img src="image/circle-cropped.png" id = "about-image">

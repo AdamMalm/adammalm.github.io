@@ -2,7 +2,6 @@ window.addEventListener('scroll', () => {
     myID = document.getElementById("back2top");
 
     var y = window.scrollY;
-    console.log(y);
     if (y >= 900) {
         myID.className = "show"
     } else {
@@ -19,6 +18,10 @@ function myFunction() {
     } else {
         x.className = "hamburger-menu-hide";
     }
+}
+
+function redirectFunction(url) {
+    window.location.href = url;
 }
 
 

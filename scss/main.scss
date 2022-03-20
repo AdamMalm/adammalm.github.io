@@ -275,7 +275,7 @@ body {
     }
 
     .edu-container {
-        min-width: 100%;
+        width: 100%;
         padding-bottom: 2%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 4px;
@@ -550,6 +550,52 @@ footer {
                 width: 200px;
             }
         }
+
+        .edu-container {
+            margin-bottom: 8%;
+
+            h2 {
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            
+            #edu-content {
+                flex-direction: column;
+
+                p {
+                    margin-left: 16px;
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        .form-container {
+            margin-top: 80px;
+            height: 100%;
+            margin-bottom: 8%;
+
+            form {
+
+                .text-fields {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                    margin-bottom: 14px;
+                    grid-template-areas:
+                        "name"
+                        "email"
+                        "message";
+                }
+
+                button {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        .social-container {
+            margin-left: 30px;
+            height: 100px;
+        }
     }
 
     .project-menu {
@@ -557,7 +603,6 @@ footer {
     }
 
     .container {
-        max-width: 100%;
         padding: 0;
 
         h1 {
@@ -571,15 +616,23 @@ footer {
         hr {
             margin: 0 5%;
         }
-
-        .content-container-2 {
-            .skill-container {
-    
-            }
-        }
     }
 
+    .container-2 {
+        padding: 0;
 
+        h1 {
+            padding: 0 5%;
+        }
+
+        h2 {
+            padding: 0 5%;
+        }
+
+        hr {
+            margin: 0 5%;
+        }
+    }
 
     #header-main {
         .nav {

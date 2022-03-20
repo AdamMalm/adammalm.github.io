@@ -571,7 +571,7 @@ body {
       margin-top: 10px;
       margin-right: 10px; }
   .content-container .edu-container {
-    min-width: 100%;
+    width: 100%;
     padding-bottom: 2%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 4px;
@@ -740,16 +740,47 @@ footer h2 {
         margin-right: -20px;
         margin-top: -10px;
         width: 200px; }
+    .content-container .edu-container {
+      margin-bottom: 8%; }
+      .content-container .edu-container h2 {
+        margin-left: 16px;
+        margin-right: 16px; }
+      .content-container .edu-container #edu-content {
+        flex-direction: column; }
+        .content-container .edu-container #edu-content p {
+          margin-left: 16px;
+          margin-right: 16px; }
+    .content-container .form-container {
+      margin-top: 80px;
+      height: 100%;
+      margin-bottom: 8%; }
+      .content-container .form-container form .text-fields {
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-bottom: 14px;
+        grid-template-areas: "name" "email" "message"; }
+      .content-container .form-container form button {
+        margin-bottom: 18px; }
+    .content-container .social-container {
+      margin-left: 30px;
+      height: 100px; }
   .project-menu {
     display: contents; }
   .container {
-    max-width: 100%;
     padding: 0; }
     .container h1 {
       padding: 0 5%; }
     .container h2 {
       padding: 0 5%; }
     .container hr {
+      margin: 0 5%; }
+  .container-2 {
+    padding: 0; }
+    .container-2 h1 {
+      padding: 0 5%; }
+    .container-2 h2 {
+      padding: 0 5%; }
+    .container-2 hr {
       margin: 0 5%; }
   #header-main .nav {
     padding: 0 8%;

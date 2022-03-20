@@ -725,6 +725,21 @@ footer h2 {
     flex-direction: column; }
     .content-container .work-container img {
       filter: blur(0); }
+    .content-container .about-container {
+      margin-bottom: 8%;
+      grid-template-areas: "primary primary primary" "secondary secondary img"; }
+      .content-container .about-container #about-text1 {
+        margin-left: 16px;
+        grid-area: primary; }
+      .content-container .about-container #about-text2 {
+        margin-right: 0;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        grid-area: secondary; }
+      .content-container .about-container #about-image {
+        margin-right: -20px;
+        margin-top: -10px;
+        width: 200px; }
   .project-menu {
     display: contents; }
   .container {
@@ -755,8 +770,7 @@ footer h2 {
         font-size: 18px; }
     #header-main #header-container #button-group {
       display: grid;
-      overflow: hidden;
-      margin-top: 110%; }
+      margin-top: 40%; }
       #header-main #header-container #button-group button {
         margin-bottom: 10%; }
   #header-main-2 {
@@ -765,6 +779,8 @@ footer h2 {
     min-width: 100%; }
   .content-container-2 p {
     min-width: 90%; }
+  .content-container-2 .skill-container h2 {
+    font-size: 20px; }
   #back2top {
     top: 10px;
     right: 10px; }

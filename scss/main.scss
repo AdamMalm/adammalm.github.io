@@ -525,6 +525,31 @@ footer {
                 filter: blur(0);
             }
         }
+
+        .about-container {
+            margin-bottom: 8%;
+            grid-template-areas:
+            "primary primary primary"
+            "secondary secondary img";
+
+            #about-text1 {
+                margin-left: 16px;
+                grid-area: primary;
+            }
+
+            #about-text2 {
+                margin-right: 0;
+                margin-left: 16px;
+                margin-bottom: 10px;
+                grid-area: secondary;
+            }
+
+            #about-image {
+                margin-right: -20px;
+                margin-top: -10px;
+                width: 200px;
+            }
+        }
     }
 
     .project-menu {
@@ -592,8 +617,7 @@ footer {
 
             #button-group {
                 display: grid;
-                overflow:hidden;
-                margin-top: 110%;
+                margin-top: 40%;
 
                 button {
                     margin-bottom: 10%;
@@ -614,6 +638,12 @@ footer {
 
         p {
             min-width: 90%;
+        }
+
+        .skill-container {
+            h2 {
+                font-size: 20px;
+            }
         }
     }
 

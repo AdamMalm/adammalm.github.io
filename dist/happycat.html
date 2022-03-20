@@ -7,8 +7,21 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="projects.js"></script>
 </head>
 <body>
+
+  <div class="project-menu">
+    <button type = "button" class="show" id = "back2top" onclick="myFunction()"><i class="fa fa-bars fa-3x" ></i></button>
+  
+    <ul class = "hamburger-menu-hide" id = "hamburger-menu">
+      <li style = "z-index: 2;" onclick='redirectFunction("index.html#header-main")'><a><p>home</p></a></li>
+      <li style = "z-index: 2;" onclick='redirectFunction("index.html#project-title")'><a><p>projects</p></a></li>
+      <li style = "z-index: 2;" onclick='redirectFunction("index.html#about-title")'><a><p>about me</p></a>/li>
+      <li style = "z-index: 2;" onclick='redirectFunction("index.html#contact-title")'><a><p>contact</p></a></li>
+    </ul>
+  </div>
 
     <header id = "header-main-2">
       
@@ -42,7 +55,7 @@
             <h2 class = "sub-title">Internet of Things Project<span class = "blue">.</span></h2>
             <hr class = "sub-line">
 
-            <div class = "content-container-3">
+            <div class = "content-container-2">
                 <img src = "image/Mask Group 10@2x.png">
 
                 <p> 
@@ -77,10 +90,5 @@
 
                 <button type = "button" onclick='redirectFunction("index.html")'><p>home</p></button>
             </div>
-        </div>
-        <script>
-          function redirectFunction(url) {
-              window.location.href = url;
-          }
-        </script>
+          </div>
     </section>

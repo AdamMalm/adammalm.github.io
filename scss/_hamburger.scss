@@ -17,7 +17,6 @@ $text-color: #424242;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 
-
     &:hover {
         cursor: pointer;
         transform:scale(1.05,1.05);
@@ -43,8 +42,6 @@ $text-color: #424242;
     display: block;
     align-items: center;
     list-style: none;
-    width: 600px;
-    height: 600px;
     top: 50px;
     right: 50px;
     

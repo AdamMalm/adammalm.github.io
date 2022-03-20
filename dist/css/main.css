@@ -85,8 +85,8 @@
       align-items: center;
       justify-content: space-evenly;
       margin: auto;
-      height: 100px;
-      width: 500px;
+      margin-bottom: 4%;
+      width: 60%;
       margin-top: 40px; }
       #header-main #header-container #button-group button {
         border: none;
@@ -274,8 +274,6 @@
   display: block;
   align-items: center;
   list-style: none;
-  width: 600px;
-  height: 600px;
   top: 50px;
   right: 50px; }
   #hamburger-menu a {
@@ -395,6 +393,9 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6; }
 
+.project-menu {
+  display: none; }
+
 .container {
   max-width: 950px;
   padding: 0 30px;
@@ -461,29 +462,19 @@ body {
     color: #61A5C2; }
   .container-2 .content-container-2 {
     width: 100%;
-    height: 1300px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     display: grid;
     justify-content: center; }
     .container-2 .content-container-2 img {
       margin: auto;
+      margin-bottom: 5%;
       width: 80%;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
     .container-2 .content-container-2 p {
       width: 80%;
-      margin: auto; }
-  .container-2 .content-container-3 {
-    width: 100%;
-    height: 2000px;
-    margin-bottom: 150px;
-    display: grid;
-    justify-content: center; }
-    .container-2 .content-container-3 img {
       margin: auto;
-      width: 80%;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
-    .container-2 .content-container-3 p {
-      width: 80%;
+      margin-bottom: 10%; }
+    .container-2 .content-container-2 button p {
       margin: auto; }
   .container-2 button {
     margin: auto;
@@ -515,7 +506,8 @@ body {
 .content-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  overflow: hidden; }
   .content-container h1 {
     padding-top: 3%; }
   .content-container .work-container {
@@ -677,8 +669,7 @@ body {
   .content-container-2 h1 {
     padding-top: 5%; }
   .content-container-2 .skill-container {
-    width: 280px;
-    height: 280px;
+    width: 30%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 4px;
     display: grid;
@@ -686,7 +677,10 @@ body {
     justify-content: space-evenly;
     margin: 2%; }
     .content-container-2 .skill-container svg {
-      margin-top: 20px; }
+      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      padding: 5%; }
     .content-container-2 .skill-container h2 {
       text-align: center;
       margin-bottom: 15px; }
@@ -700,16 +694,80 @@ footer h2 {
     flex-direction: column; }
     .content-container .work-container img {
       filter: blur(0); }
+  .project-menu {
+    display: contents; }
   #header-main .nav {
     padding: 0 8%;
     padding-top: 4%; }
+    #header-main .nav #logo {
+      display: none; }
+    #header-main .nav ul {
+      display: none; }
   #header-main #header-container {
-    margin-top: 2.5rem; } }
+    margin-top: 2.5rem; }
+    #header-main #header-container #button-group button {
+      margin: 0 4% 4% 4%; }
+  #header-main-2 {
+    display: none; }
+  .content-container-2 img {
+    min-width: 100%; }
+  .content-container-2 p {
+    min-width: 90%; }
+  #back2top {
+    top: 10px;
+    right: 10px; }
+  #hamburger-menu {
+    top: 30px;
+    right: 0; } }
 
 @media screen and (max-width: 767px) {
   .content-container {
     flex-direction: column; }
     .content-container .work-container img {
       filter: blur(0); }
+  .project-menu {
+    display: contents; }
+  .container {
+    max-width: 100%;
+    padding: 0; }
+    .container h1 {
+      padding: 0 5%; }
+    .container h2 {
+      padding: 0 5%; }
+    .container hr {
+      margin: 0 5%; }
   #header-main .nav {
-    padding: 0 5%; } }
+    padding: 0 8%;
+    padding-top: 4%; }
+    #header-main .nav #logo {
+      display: none; }
+    #header-main .nav ul {
+      display: none; }
+  #header-main #header-container {
+    margin-top: 30%; }
+    #header-main #header-container #name {
+      text-align: center; }
+      #header-main #header-container #name p {
+        font-size: 36px; }
+    #header-main #header-container #name-text {
+      text-align: center; }
+      #header-main #header-container #name-text p {
+        font-size: 18px; }
+    #header-main #header-container #button-group {
+      display: grid;
+      overflow: hidden;
+      margin-top: 110%; }
+      #header-main #header-container #button-group button {
+        margin-bottom: 10%; }
+  #header-main-2 {
+    display: none; }
+  .content-container-2 img {
+    min-width: 100%; }
+  .content-container-2 p {
+    min-width: 90%; }
+  #back2top {
+    top: 10px;
+    right: 10px; }
+  #hamburger-menu {
+    top: 30px;
+    right: 0; } }
